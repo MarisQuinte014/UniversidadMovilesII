@@ -142,6 +142,7 @@
             android:layout_weight="1"
             android:background="@drawable/botones_generales"
             android:layout_marginLeft="2dp"
+            android:onClick="CancelarMateria"
             android:drawableStart="@android:drawable/ic_menu_search"
             android:text="Cancelar" />
     </LinearLayout>
@@ -160,6 +161,7 @@
             android:layout_height="40dp"
             android:layout_weight="1"
             android:background="@drawable/botones_generales"
+            android:onClick="ActivarMateria"
             android:layout_marginRight="2dp"
             android:text="Activar" />
 
@@ -168,7 +170,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_weight="1"
-            android:onClick="Eliminar"
+            android:onClick="RegresarInicio"
             android:background="@drawable/botones_generales"
             android:layout_marginLeft="2dp"
             android:drawableStart="@android:drawable/ic_menu_search"

@@ -41,7 +41,6 @@ public class EstudianteActivity extends AppCompatActivity {
         jcbactivo = findViewById(R.id.cbactivo);
         id_documento = "";
     }
-
     public void Adicionar(View view){
         carnet=jetcarnet.getText().toString();
         nombre=jetnombre.getText().toString();
@@ -87,7 +86,6 @@ public class EstudianteActivity extends AppCompatActivity {
             }
         }
     } //fin adicionar
-
     private void ConsultarDocumento(){
         carnet = jetcarnet.getText().toString();
         if(carnet.isEmpty()){
@@ -185,7 +183,6 @@ public class EstudianteActivity extends AppCompatActivity {
     public void Cancelar(View view){
         Limpiar_datos();
     }
-
     public void Anlular(View view){
         if(!id_documento.equals("")){
             carnet = jetcarnet.getText().toString();
