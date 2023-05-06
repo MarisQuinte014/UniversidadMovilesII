@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".EstudianteActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estudiante"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="30dp" />
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="250dp"
+        android:layout_height="69dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etcarnet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Carnet"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="250dp"
+        android:layout_height="69dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etnombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Nombre"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="250dp"
+        android:layout_height="69dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etsemestre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Semestre"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="250dp"
+        android:layout_height="69dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etcarrera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="Carrera"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Switch
+        android:id="@+id/cbactivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="50dp"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_gravity="center"
+        android:text="Activo"
+        android:checked="true"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp">
+
+        <Button
+            android:id="@+id/guardar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:onClick="Adicionar"
+            android:background="@drawable/botones_generales"
+            android:layout_marginRight="2dp"
+
+            android:text="Adicionar" />
+
+        <Button
+            android:id="@+id/consultar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:onClick="Consultar"
+            android:background="@drawable/botones_generales"
+            android:layout_marginLeft="2dp"
+            android:drawableStart="@android:drawable/ic_menu_search"
+            android:text="Consultar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp">
+
+        <Button
+            android:id="@+id/modificar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:onClick="Modificar"
+            android:background="@drawable/botones_generales"
+            android:layout_marginRight="2dp"
+
+            android:text="Modificar" />
+
+        <Button
+            android:id="@+id/eliminar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:onClick="Eliminar"
+            android:background="@drawable/botones_generales"
+            android:layout_marginLeft="2dp"
+            android:drawableStart="@android:drawable/ic_menu_search"
+            android:text="Eliminar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp">
+
+        <Button
+            android:id="@+id/anular"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/botones_generales"
+            android:layout_marginRight="2dp"
+            android:onClick="Cancelar"
+            android:text="Cancelar" />
+
+        <Button
+            android:id="@+id/limpiar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:onClick="Regresar"
+            android:background="@drawable/botones_generales"
+            android:layout_marginLeft="2dp"
+            android:drawableStart="@android:drawable/ic_menu_search"
+            android:text="Regresar" />
+    </LinearLayout>
+
+</LinearLayout>

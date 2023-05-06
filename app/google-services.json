@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "79030555573",
+    "project_id": "universidad-movilesii",
+    "storage_bucket": "universidad-movilesii.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79030555573:android:379a22c8407e47936bfffc",
+        "android_client_info": {
+          "package_name": "com.example.universidad_movilesii"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "79030555573-qr4b8knh6nkva7cd7hf6f3mhufgvn5hq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-gdZEvx0wLsj2nTSuvU67bvDP2EydYNg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "79030555573-qr4b8knh6nkva7cd7hf6f3mhufgvn5hq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
