@@ -8,33 +8,20 @@
     android:background="@drawable/modulo_materia"
     tools:context=".MateriaActivity">
 
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Materia"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:fontFamily="sans-serif-condensed"
-        android:layout_gravity="center"
-        android:layout_marginTop="40dp"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="30dp" />
-
-
     <LinearLayout
         android:id="@+id/linear2"
         android:layout_width="310dp"
         android:layout_height="69dp"
         android:orientation="horizontal"
         android:layout_gravity="center"
-        android:layout_marginTop="58dp">
+        android:layout_marginTop="188dp">
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="250dp"
             android:layout_height="69dp"
-            android:layout_gravity="center">
+            android:textColorHint="@color/black"
+            android:layout_gravity="center"
+            >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etcodigomateria"
@@ -43,6 +30,7 @@
                 android:background="@drawable/style_borde_editext"
                 android:fontFamily="sans-serif-condensed"
                 android:hint="Código de la materia:"
+                android:textColor="@color/black"
                 android:textStyle="bold" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -63,6 +51,7 @@
         android:layout_height="69dp"
         android:layout_gravity="center"
         android:layout_marginTop="25dp"
+        android:textColorHint="@color/black"
         >
 
         <com.google.android.material.textfield.TextInputEditText
@@ -72,6 +61,7 @@
             android:background="@drawable/style_borde_editext"
             android:fontFamily="sans-serif-condensed"
             android:hint="Nombre de la materia:"
+            android:textColor="@color/black"
             android:textStyle="bold" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -80,6 +70,7 @@
         android:layout_height="69dp"
         android:layout_gravity="center"
         android:layout_marginTop="25dp"
+        android:textColorHint="@color/black"
         >
 
         <com.google.android.material.textfield.TextInputEditText
@@ -89,6 +80,7 @@
             android:background="@drawable/style_borde_editext"
             android:fontFamily="sans-serif-condensed"
             android:hint="Creditos de la materia:"
+            android:textColor="@color/black"
             android:textStyle="bold" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -97,6 +89,7 @@
         android:layout_height="69dp"
         android:layout_gravity="center"
         android:layout_marginTop="25dp"
+        android:textColorHint="@color/black"
         >
 
         <com.google.android.material.textfield.TextInputEditText
@@ -106,6 +99,7 @@
             android:background="@drawable/style_borde_editext"
             android:fontFamily="sans-serif-condensed"
             android:hint="Nombre del profesor:"
+            android:textColor="@color/black"
             android:textStyle="bold" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -119,7 +113,9 @@
         android:checked="true"
         android:fontFamily="sans-serif-condensed"
         android:text="Activo"
-        android:textSize="20dp" />
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -137,6 +133,7 @@
             android:layout_weight="1"
             android:background="@drawable/botones_generales"
             android:onClick="AdicionarMateria"
+            android:textStyle="bold"
             android:text="Guardar" />
 
         <Button
@@ -148,6 +145,7 @@
             android:background="@drawable/botones_generales"
             android:drawableStart="@android:drawable/ic_menu_search"
             android:onClick="CancelarMateria"
+            android:textStyle="bold"
             android:text="Cancelar" />
     </LinearLayout>
 
@@ -167,6 +165,7 @@
             android:background="@drawable/botones_generales"
             android:onClick="ActivarMateria"
             android:layout_marginRight="2dp"
+            android:textStyle="bold"
             android:text="Activar" />
 
         <Button
@@ -178,6 +177,7 @@
             android:background="@drawable/botones_generales"
             android:layout_marginLeft="2dp"
             android:drawableStart="@android:drawable/ic_menu_search"
+            android:textStyle="bold"
             android:text="Regresar" />
     </LinearLayout>
 </LinearLayout>

@@ -33,6 +33,7 @@ public class MateriaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_materia);
+        getSupportActionBar().hide();
         jetcodigomateria = findViewById(R.id.etcodigomateria);
         jetnombremateria = findViewById(R.id.etnombremateria);
         jetcreditos = findViewById(R.id.etcreditos);
